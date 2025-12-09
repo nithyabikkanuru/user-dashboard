@@ -1,0 +1,221 @@
+
+/* body {
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+ Search bar styles
+.search-container {
+  background: #ffffffbb;
+  backdrop-filter: blur(6px);
+  padding: 10px 16px;
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #ffffff50;
+}
+
+.search-container input {
+  border: none;
+  flex: 1;
+  background: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+Grid layout
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+
+.loading-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin {
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.error-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: red;
+  font-size: 1.1rem;
+} */
+
+
+/* Pulsating neon background */
+body, html, #root {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffea);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Dashboard title */
+.dashboard-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+  animation: fadeIn 1s ease;
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #0ff;
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  width: 250px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s all;
+}
+
+.search-container input:focus {
+  border-color: #ff0;
+  box-shadow: 0 0 10px #ff0, 0 0 20px #0ff;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.neon-icon {
+  stroke: #0ff;
+  filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 10px #0ff);
+}
+
+/* Users grid */
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Neon spinner */
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  gap: 15px;
+}
+
+.spin {
+  width: 50px;
+  height: 50px;
+  stroke-width: 3;
+}
+
+.neon-spin {
+  stroke: #0ff;
+  filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 10px #0ff);
+  animation: spin 1s linear infinite, neonPulse 1.5s infinite alternate;
+}
+
+.loading-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: 0 0 5px #0ff;
+  animation: pulse 1.5s infinite;
+}
+
+/* Skeleton cards */
+.skeleton-card {
+  width: 220px;
+  height: 120px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  animation: pulseSkeleton 1.2s infinite;
+}
+
+/* Error message */
+.error-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: #ff4c4c;
+}
+
+.error-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.shake {
+  animation: shake 0.8s infinite;
+}
+
+/* Animations */
+/* @keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes pulse { 0%,100% {opacity:1;} 50%{opacity:0.6;} }
+@keyframes fadeIn { from { opacity:0; transform:translateY(-10px); } to { opacity:1; transform:translateY(0); } }
+@keyframes neonPulse { 0% { filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 10px #0ff); } 100% { filter: drop-shadow(0 0 15px #0ff) drop-shadow(0 0 25px #0ff); } }
+@keyframes pulseSkeleton { 0% {opacity:0.3;} 50%{opacity:0.7;} 100%{opacity:0.3;} }
+@keyframes shake { 0% {transform:translateX(0);} 25% {transform:translateX(-5px);} 50% {transform:translateX(5px);} 75% {transform:translateX(-5px);} 100% {transform:translateX(0);} }
+ */

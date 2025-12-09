@@ -1,0 +1,50 @@
+/* .user-card {
+  padding: 16px;
+  background: #ffffffcc;
+  border-radius: 12px;
+  border: 2px solid #ffffff90;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.user-card h3 {
+  margin: 0 0 8px;
+  font-weight: 600;
+} */  
+
+.user-card {
+  background: rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  border: 1px solid #0ff;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  text-align: center;
+}
+
+.user-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #0ff, 0 0 40px #ff0;
+  border: 1px solid #ff0;
+}
+
+.user-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.user-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+
+

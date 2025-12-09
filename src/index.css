@@ -1,0 +1,42 @@
+.user-card {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.6rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.user-info-icon {
+  color: #555;
+}
+
+.user-info-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.user-info-label {
+  font-weight: 600;
+  color: #333;
+}
