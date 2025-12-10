@@ -1,22 +1,4 @@
-/* .user-card {
-  padding: 16px;
-  background: #ffffffcc;
-  border-radius: 12px;
-  border: 2px solid #ffffff90;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.user-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.user-card h3 {
-  margin: 0 0 8px;
-  font-weight: 600;
-} */  
 
 .user-card {
   background: rgba(0,0,0,0.2);
@@ -45,6 +27,7 @@
   margin: 4px 0;
   font-size: 0.95rem;
 }
+
 
 
 
